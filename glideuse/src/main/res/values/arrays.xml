@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="framework_types">
+        <item>Fresco</item>
+        <item>Glide</item>
+    </string-array>
+    <string-array name="method_types">
+        <item>NetWork</item>
+        <item>Local</item>
+    </string-array>
+</resources>

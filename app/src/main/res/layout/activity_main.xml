@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.guoxiang.frescotest.MainActivity">
+
+    <me.relex.photodraweeview.PhotoDraweeView
+        android:id="@+id/simple_view"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:placeholderImage="@mipmap/ic_launcher"
+        app:fadeDuration="3000"
+        app:actualImageScaleType="focusCrop"
+        app:failureImage="@drawable/failed"
+        app:failureImageScaleType="fitXY"/>
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/image_huge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/failed"/>
+    </ScrollView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_toleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="左移动"/>
+        <Button
+            android:id="@+id/btn_toright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="右移动"/>
+    </LinearLayout>
+</LinearLayout>
